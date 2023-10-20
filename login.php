@@ -1,5 +1,7 @@
 <?php
 include("./database.php");
+session_start();
+session_destroy();
 $mail_valid = $passwd_valid = true;
 if (isset($_POST["btn_login"])) {
     $mail = $_POST['mailAddress'];
